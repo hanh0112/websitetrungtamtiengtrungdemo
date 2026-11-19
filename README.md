@@ -38,7 +38,13 @@ Xây dựng trên nền tảng **WordPress 6.x + Elementor Pro + LMS Education T
 
 ---
 
-## 3. Hướng Dẫn Cài Đặt & Triển Khai (Dành cho máy mới)
+## 3. Đồng Bộ Giao Diện Trang Tham Khảo
+
+Trang chủ, giới thiệu, liên hệ, FAQ và cẩm nang dùng các bản HTML đã kết xuất trong `wp-content/themes/livi-child/reference-pages/`. CSS giao diện và logo tham khảo được tải từ `tiengtrungduhoctaihue.com.vn`; Docker cần có kết nối Internet để hiển thị đầy đủ.
+
+Các trang này được thay nội dung ở lớp giao diện nên chỉnh sửa trong Elementor sẽ không cập nhật phần nội dung đang hiển thị. Hotline, email và địa chỉ được thay bằng thông tin đã xác nhận cho website local. Danh mục và tìm kiếm khóa học tiếp tục dùng nội dung local để giữ chức năng tải dữ liệu động.
+
+## 4. Hướng Dẫn Cài Đặt & Triển Khai (Dành cho máy mới)
 
 ### Bước 1: Khởi động hệ thống với Docker
 Mở Terminal/PowerShell tại thư mục dự án và chạy:
@@ -56,7 +62,7 @@ Sau khi import thành công, truy cập ngay [http://localhost:8080](http://loca
 
 ---
 
-## 4. Các Lệnh Quản Trị Hệ Thống Thường Dùng
+## 5. Các Lệnh Quản Trị Hệ Thống Thường Dùng
 
 * **Tạm dừng hệ thống:**
   ```bash
@@ -74,3 +80,4 @@ Sau khi import thành công, truy cập ngay [http://localhost:8080](http://loca
   ```bash
   docker exec wordpress_db mysqldump -u root -prootpassword123 wordpress > database.sql
   ```
+"# websitetrungtamtiengtrungdemo" 
